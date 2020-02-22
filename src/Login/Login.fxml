@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="506.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="87.0" layoutY="153.0" prefHeight="66.0" prefWidth="320.0" text="LOGIN">
+         <font>
+            <Font name="Candara Bold" size="42.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="TF_Username" focusColor="#53ae6d" labelFloat="true" layoutX="137.0" layoutY="241.0" prefHeight="25.0" prefWidth="221.0" promptText="Username" unFocusColor="#909090">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="PF_Password" focusColor="#53ae6d" labelFloat="true" layoutX="137.0" layoutY="311.0" prefHeight="25.0" prefWidth="221.0" promptText="Password" unFocusColor="#909090">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="Login" buttonType="RAISED" layoutX="219.0" layoutY="379.0" onAction="#Login" ripplerFill="#9e7d30" text="LOG IN">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Back" buttonType="RAISED" layoutX="225.0" layoutY="421.0" onAction="#Back" ripplerFill="#9e7d30" text="BACK">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="IV_Logo" fitHeight="150.0" fitWidth="200.0" layoutX="125.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

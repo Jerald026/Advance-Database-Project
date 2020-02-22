@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pieChart" prefHeight="692.0" prefWidth="1034.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Staff.StaffController">
+    <stylesheets>
+        <URL value="@staff.css" />
+    </stylesheets>
+   <children>
+      <JFXHamburger fx:id="ham" layoutX="981.0" layoutY="29.0" prefHeight="44.0" prefWidth="39.0" />
+      <ImageView fx:id="IV_logo" fitHeight="87.0" fitWidth="242.0" layoutX="396.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true" />
+      <SplitPane dividerPositions="0.2777777777777778" layoutX="21.0" layoutY="112.0" prefHeight="554.0" prefWidth="1005.0">
+        <items>
+            <SplitPane dividerPositions="0.22644927536231885, 0.6141304347826086" orientation="VERTICAL" prefHeight="575.0" prefWidth="262.0" style="-fx-background-color: #b2ebf2;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="147.0" prefWidth="205.0" style="-fx-border-color: #212121; -fx-background-color: #ffffff;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="51.0" text="Name: ">
+                           <font>
+                              <Font name="Candara" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="55.0" layoutY="51.0" prefHeight="17.0" prefWidth="217.0" text="PUT NAME HERE">
+                           <font>
+                              <Font name="Candara Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="74.0" text="Position:">
+                           <font>
+                              <Font name="Candara" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="55.0" layoutY="74.0" prefHeight="17.0" prefWidth="217.0" text="PUT POSITION HERE">
+                           <font>
+                              <Font name="Candara Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="27.0" text="ID#:">
+                           <font>
+                              <Font name="Candara" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="55.0" layoutY="27.0" prefHeight="17.0" prefWidth="217.0" text="PUT ID# HERE">
+                           <font>
+                              <Font name="Candara Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="98.0" text="Department:">
+                           <font>
+                              <Font name="Candara" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="44.0" layoutY="6.0" lineSpacing="1.0" prefHeight="17.0" prefWidth="194.0" style="-fx-background-color: #e3f2fd;" text="EMPLOYEE INFORMATION" underline="true">
+                           <font>
+                              <Font name="Tahoma Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="77.0" layoutY="98.0" prefHeight="17.0" prefWidth="194.0" text="PUT DEPARTMENT">
+                           <font>
+                              <Font name="Candara Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #212121; -fx-background-color: #ffffff;">
+                     <children>
+                        <PieChart fx:id="chart" layoutX="-2.0" layoutY="-2.0" prefHeight="208.0" prefWidth="275.0" />
+                        <Label layoutX="67.0" layoutY="5.0" style="-fx-background-color: #e3f2fd;" text="AVAILABLE ROOMS" underline="true">
+                           <font>
+                              <Font name="Tahoma Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="172.0" prefWidth="294.0" style="-fx-border-color: #212121; -fx-background-color: #ffffff;">
+                     <children>
+                        <PieChart fx:id="chart1" prefHeight="208.0" prefWidth="275.0" />
+                        <Label layoutX="71.0" layoutY="5.0" style="-fx-background-color: #e3f2fd;" text="RESERVED ROOMS" underline="true">
+                           <font>
+                              <Font name="Tahoma Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <AnchorPane prefHeight="571.0" prefWidth="695.0" style="-fx-background-color: #e3f2fd;">
+               <children>
+                  <GridPane layoutX="25.0" layoutY="24.0" prefHeight="505.0" prefWidth="668.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <JFXButton fx:id="BTN_RoomReservation" buttonType="RAISED" prefHeight="240.0" prefWidth="215.0" ripplerFill="#ab8935" text="ROOM RESERVATION" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Candara Bold" size="28.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="BTN_Rooms" buttonType="RAISED" prefHeight="240.0" prefWidth="215.0" ripplerFill="#ab8935" text="ROOMS" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Candara Bold" size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="BTN_CancelReservation" buttonType="RAISED" prefHeight="240.0" prefWidth="215.0" ripplerFill="#ab8b35" text="CANCEL RESERVATION" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Candara Bold" size="28.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="BTN_CheckOut" buttonType="RAISED" prefHeight="240.0" prefWidth="215.0" ripplerFill="#ab8b35" text="CHECK OUT" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Candara Bold" size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="BTN_Guests" buttonType="RAISED" prefHeight="240.0" prefWidth="215.0" ripplerFill="#ab8b35" text="GUESTS" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Candara Bold" size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="BTN_CheckIn" buttonType="RAISED" prefHeight="240.0" prefWidth="215.0" ripplerFill="#ab8b35" text="CHECK IN">
+                           <font>
+                              <Font name="Candara Bold" size="30.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     
+                  </GridPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <JFXDrawer fx:id="drawer" alignment="TOP_RIGHT" defaultDrawerSize="250.0" direction="RIGHT" layoutX="907.0" layoutY="91.0" prefHeight="198.0" prefWidth="100.0" />
+   </children>
+</AnchorPane>
