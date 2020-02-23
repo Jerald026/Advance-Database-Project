@@ -16,16 +16,21 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -66,6 +71,42 @@ public class StaffController implements Initializable {
 
     @FXML
     private JFXDrawer drawer;
+
+    @FXML
+    void CancelReservation(ActionEvent event) {
+
+    }
+
+    @FXML
+    void CheckIn(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/CheckIn.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage(StageStyle.DECORATED);
+        stage.setTitle("Login");
+        stage.setScene(scene);
+        ((Node) event.getSource()).getScene().getWindow().hide();
+        stage.show();
+    }
+
+    @FXML
+    void CheckOut(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Guests(ActionEvent event) {
+
+    }
+
+    @FXML
+    void RoomReservation(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Rooms(ActionEvent event) {
+
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
