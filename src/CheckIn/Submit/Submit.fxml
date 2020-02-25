@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="507.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckIn.Submit.SubmitController">
+   <stylesheets>
+      <URL value="@../../CheckIn/checkin.css" />
+   </stylesheets>
+   <children>
+      <SplitPane layoutX="16.0" layoutY="103.0" prefHeight="372.0" prefWidth="475.0" style="-fx-border-color: #0d47a1;">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="394.0" prefWidth="473.0">
+               <children>
+                  <JFXComboBox focusColor="#53ae6d" labelFloat="true" layoutX="101.0" layoutY="48.0" prefHeight="25.0" prefWidth="273.0" promptText="Room Type" unFocusColor="#6b6666" />
+                  <JFXComboBox focusColor="#53ae6d" labelFloat="true" layoutX="100.0" layoutY="105.0" prefHeight="25.0" prefWidth="273.0" promptText="Number of Bed" unFocusColor="#6b6666" />
+                  <JFXDatePicker layoutX="212.0" layoutY="170.0" prefHeight="25.0" prefWidth="173.0" />
+                  <Label layoutX="99.0" layoutY="176.0" text="Check-in Date:">
+                     <font>
+                        <Font name="Candara" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker layoutX="221.0" layoutY="217.0" prefHeight="25.0" prefWidth="164.0" />
+                  <Label layoutX="98.0" layoutY="225.0" text="Check-out Date:">
+                     <font>
+                        <Font name="Candara" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="BTN_Back" buttonType="RAISED" layoutX="92.0" layoutY="283.0" onAction="#Back" prefWidth="93.0" ripplerFill="#d7b348" text="BACK">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="BTN_FindRoom" buttonType="RAISED" layoutX="292.0" layoutY="283.0" onAction="#FindRoom" prefWidth="93.0" ripplerFill="#d7b348" text="FIND ROOM">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label alignment="CENTER" layoutX="121.0" layoutY="-4.0" prefHeight="45.0" prefWidth="232.0" text="Check In" textAlignment="CENTER">
+         <font>
+            <Font name="Vivaldi Italic" size="57.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="162.0" layoutY="63.0" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #bbdefb;" text="Room Data" textAlignment="CENTER">
+         <font>
+            <Font name="Candara Light" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

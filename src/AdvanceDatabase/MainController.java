@@ -11,16 +11,14 @@ import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
@@ -42,8 +40,17 @@ public class MainController implements Initializable {
     @FXML
     private JFXDrawer drawer;
 
+    @FXML
+    private ImageView IV_Logo;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        Image logo = new Image("/Pics/logoTrans.png");
+        IV_Logo.setImage(logo);
+        IV_Logo.setFitHeight(150);
+        IV_Logo.setFitWidth(550);
+        IV_Logo.setPreserveRatio(true);
 
         try {
             HamburgerBackArrowBasicTransition burger = new HamburgerBackArrowBasicTransition(ham);
@@ -70,15 +77,14 @@ public class MainController implements Initializable {
                             case "Rebooking":
                                 Rebooking();
                                 break;
-                            case "Login":
-                        {
-                            try {
-                                Login();
-                            } catch (IOException ex) {
-                                System.err.println("ERROR!\n" + ex.getMessage());
+                            case "Login": {
+                                try {
+                                    Login();
+                                } catch (IOException ex) {
+                                    System.err.println("ERROR!\n" + ex.getMessage());
+                                }
                             }
-                        }
-                                break;
+                            break;
                             case "Exit":
                                 System.exit(0);
                         }
@@ -87,11 +93,11 @@ public class MainController implements Initializable {
             }
 
         } catch (IOException ex) {
-            
+
         }
     }
-    
-        private void Login() throws IOException{
+
+    private void Login() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/Login/Login.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);

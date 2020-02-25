@@ -2,11 +2,13 @@
 
 <?import com.jfoenix.controls.JFXDrawer?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="575.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdvanceDatabase.MainController">
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="575.0" prefWidth="715.0" style="-fx-background-color: #e3f2fd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdvanceDatabase.MainController">
    <children>
       <JFXHamburger fx:id="ham" layoutX="14.0" layoutY="14.0" />
       <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" layoutX="14.0" layoutY="42.0" prefHeight="186.0" prefWidth="100.0" />
+      <ImageView fx:id="IV_Logo" fitHeight="150.0" fitWidth="200.0" layoutX="222.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

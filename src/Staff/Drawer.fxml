@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="147.0" style="-fx-border-color: #9e7d30; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Staff.DrawerController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="147.0" style="-fx-border-color: #0d47a1; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Staff.DrawerController">
    <children>
       <Button fx:id="BTN_AddUser" mnemonicParsing="false" onAction="#AddUser" prefHeight="51.0" prefWidth="147.0" style="-fx-padding: 5;" text="ADD USER" textAlignment="CENTER" wrapText="true">
          <font>

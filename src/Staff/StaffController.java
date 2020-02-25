@@ -82,7 +82,7 @@ public class StaffController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/CheckIn.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);
-        stage.setTitle("Login");
+        stage.setTitle("Check-In");
         stage.setScene(scene);
         ((Node) event.getSource()).getScene().getWindow().hide();
         stage.show();
