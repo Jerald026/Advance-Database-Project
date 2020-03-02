@@ -146,36 +146,61 @@
                      </children></AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-border-color: #0d47a1;">
                      <children>
-                        <Label layoutX="60.0" layoutY="53.0" text="Number of night:">
+                        <Label layoutX="60.0" layoutY="27.0" text="Number of night:">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="60.0" layoutY="82.0" text="Cost per night:">
+                        <Label layoutX="60.0" layoutY="56.0" text="Cost per night:">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="60.0" layoutY="110.0" text="Total:">
+                        <Label layoutX="60.0" layoutY="191.0" text="Total:">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER_RIGHT" layoutX="179.0" layoutY="54.0" prefHeight="18.0" prefWidth="101.0" text="Label" textAlignment="CENTER">
+                        <Label alignment="CENTER_RIGHT" layoutX="179.0" layoutY="28.0" prefHeight="18.0" prefWidth="101.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER_RIGHT" layoutX="179.0" layoutY="82.0" prefHeight="18.0" prefWidth="101.0" text="Label" textAlignment="CENTER">
+                        <Label alignment="CENTER_RIGHT" layoutX="179.0" layoutY="56.0" prefHeight="18.0" prefWidth="101.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER_RIGHT" layoutX="179.0" layoutY="110.0" prefHeight="18.0" prefWidth="101.0" text="Label" textAlignment="CENTER">
+                        <Label alignment="CENTER_RIGHT" layoutX="179.0" layoutY="191.0" prefHeight="18.0" prefWidth="101.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
+                        <Label layoutX="60.0" layoutY="168.0" text="Discount:">
+                           <font>
+                              <Font name="Candara" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="179.0" layoutY="168.0" prefHeight="18.0" prefWidth="101.0" text="Label" textAlignment="CENTER">
+                           <font>
+                              <Font name="Candara" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="83.0" text="Voucher:">
+                           <font>
+                              <Font name="Candara" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField alignment="CENTER" layoutX="174.0" layoutY="80.0" prefHeight="25.0" prefWidth="187.0">
+                           <font>
+                              <Font name="Candara" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="BTN_Save1" buttonType="RAISED" layoutX="288.0" layoutY="116.0" onAction="#Save" prefHeight="18.0" prefWidth="73.0" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="VALIDATE">
+                           <font>
+                              <Font name="Candara Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
                      </children></AnchorPane>
               </items>
             </SplitPane>
@@ -206,12 +231,12 @@
             <Font name="SansSerif Bold" size="15.0" />
          </font>
       </Label>
-      <JFXButton fx:id="BTN_Save" buttonType="RAISED" layoutX="608.0" layoutY="572.0" onAction="#Save" ripplerFill="#d7b348" text="SAVE">
+      <JFXButton fx:id="BTN_Save" buttonType="RAISED" layoutX="608.0" layoutY="572.0" onAction="#Save" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="SAVE">
          <font>
             <Font name="Candara Bold" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="BTN_Back" buttonType="RAISED" layoutX="533.0" layoutY="572.0" onAction="#Back" ripplerFill="#d7b348" text="BACK">
+      <JFXButton fx:id="BTN_Back" buttonType="RAISED" layoutX="533.0" layoutY="572.0" onAction="#Back" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="BACK">
          <font>
             <Font name="Candara Bold" size="14.0" />
          </font>

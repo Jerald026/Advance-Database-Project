@@ -119,7 +119,7 @@ public class StaffController implements Initializable {
 
         ObservableList<PieChart.Data> pieChartData
                 = FXCollections.observableArrayList(
-                        new PieChart.Data("Available Room", 32),
+                        new PieChart.Data("Available Room", 80),
                         new PieChart.Data("Occupied", 92));
         chart.setData(pieChartData);
         chart.setStartAngle(90);
