@@ -73,6 +73,7 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         RequiredFieldValidator validator = new RequiredFieldValidator();
+        RequiredFieldValidator validator1 = new RequiredFieldValidator();
 
         TF_Username.getValidators().add(validator);
         validator.setMessage("Fill-up username!");
@@ -86,8 +87,8 @@ public class LoginController implements Initializable {
             }
         });
 
-        PF_Password.getValidators().add(validator);
-        validator.setMessage("Fill-up password!");
+        PF_Password.getValidators().add(validator1);
+        validator1.setMessage("Fill-up password!");
 
         PF_Password.focusedProperty().addListener(new ChangeListener<Boolean>() {
             @Override
