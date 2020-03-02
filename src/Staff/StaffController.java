@@ -79,7 +79,7 @@ public class StaffController implements Initializable {
 
     @FXML
     void CheckIn(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/CheckIn.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/GuestOption/GuestOption.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);
         stage.setTitle("Check-In");

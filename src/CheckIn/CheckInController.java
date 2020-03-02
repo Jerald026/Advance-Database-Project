@@ -59,10 +59,10 @@ public class CheckInController implements Initializable {
 
     @FXML
     void Back(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/Staff/Staff.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/GuestOption/GuestOption.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);
-        stage.setTitle("Staff");
+        stage.setTitle("Check-in");
         stage.setScene(scene);
         ((Node) event.getSource()).getScene().getWindow().hide();
         stage.show();
@@ -92,6 +92,7 @@ public class CheckInController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         // TODO
     }
 

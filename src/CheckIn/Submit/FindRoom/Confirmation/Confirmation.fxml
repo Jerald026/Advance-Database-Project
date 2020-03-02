@@ -13,7 +13,7 @@
         <URL value="@confirmation.css" />
     </stylesheets>
    <children>
-      <SplitPane dividerPositions="0.4270676691729323" layoutX="28.0" layoutY="116.0" prefHeight="447.0" prefWidth="667.0">
+      <SplitPane fx:id="splitPane" dividerPositions="0.4270676691729323" layoutX="28.0" layoutY="116.0" prefHeight="447.0" prefWidth="667.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.0" prefWidth="310.0" style="-fx-border-color: #0d47a1;">
                <children>

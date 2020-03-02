@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CheckIn.Submit.FindRoom.Confirmation;
+package CheckIn.GuestOption;
 
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
@@ -16,7 +16,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.SplitPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -25,33 +24,46 @@ import javafx.stage.StageStyle;
  *
  * @author halla
  */
-public class ConfirmationController implements Initializable {
+public class GuestOptionController implements Initializable {
 
     @FXML
-    private JFXButton BTN_Save;
+    private JFXButton BTN_NewGuest;
+    @FXML
+    private JFXButton BTN_OldGuest;
+    @FXML
+    private JFXButton BTN_ReservedGuest;
+    @FXML
+    private JFXButton BTN_ReservedGuest1;
+
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }
 
     @FXML
-    private JFXButton BTN_Back;
-    @FXML
-    private SplitPane splitPane;
-    @FXML
-    private JFXButton BTN_Save1;
-    
-    
-
-    @FXML
-    void Back(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/Submit/FindRoom/FindRoom.fxml"));
+    private void NewGuest(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/CheckIn.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);
-        stage.setTitle("Check-In");
+        stage.setTitle("Check-in");
         stage.setScene(scene);
         ((Node) event.getSource()).getScene().getWindow().hide();
         stage.show();
     }
 
     @FXML
-    void Save(ActionEvent event) throws IOException {
+    private void OldGuest(ActionEvent event) {
+    }
+
+    @FXML
+    private void ReservedGuest(ActionEvent event) {
+    }
+
+    @FXML
+    private void Back(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("/Staff/Staff.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);
@@ -59,11 +71,6 @@ public class ConfirmationController implements Initializable {
         stage.setScene(scene);
         ((Node) event.getSource()).getScene().getWindow().hide();
         stage.show();
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-
     }
 
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="281.0" prefWidth="293.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="CheckIn.GuestOption.GuestOptionController">
+    <stylesheets>
+        <URL value="@guestoption.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="33.0" prefHeight="44.0" prefWidth="234.0" text="Check In" textAlignment="CENTER">
+         <font>
+            <Font name="Vivaldi Italic" size="44.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="BTN_NewGuest" buttonType="RAISED" focusTraversable="false" layoutX="70.0" layoutY="86.0" onAction="#NewGuest" prefHeight="27.0" prefWidth="160.0" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="NEW GUEST (WALK-IN)">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BTN_OldGuest" buttonType="RAISED" focusTraversable="false" layoutX="70.0" layoutY="134.0" onAction="#OldGuest" prefHeight="27.0" prefWidth="160.0" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="OLD GUEST (WALK-IN)">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BTN_ReservedGuest" buttonType="RAISED" focusTraversable="false" layoutX="70.0" layoutY="183.0" onAction="#ReservedGuest" prefHeight="27.0" prefWidth="160.0" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="RESERVED GUEST">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BTN_ReservedGuest1" buttonType="RAISED" focusTraversable="false" layoutX="127.0" layoutY="233.0" onAction="#Back" prefHeight="15.0" prefWidth="47.0" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="BACK">
+         <font>
+            <Font name="Candara Bold" size="11.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
