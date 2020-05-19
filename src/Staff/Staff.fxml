@@ -32,7 +32,7 @@
                               <Font name="Candara" size="13.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER_RIGHT" layoutX="55.0" layoutY="51.0" prefHeight="17.0" prefWidth="217.0" text="PUT NAME HERE">
+                        <Label fx:id="nameLbl" alignment="CENTER_RIGHT" layoutX="55.0" layoutY="51.0" prefHeight="17.0" prefWidth="217.0" text="PUT NAME HERE">
                            <font>
                               <Font name="Candara Bold" size="13.0" />
                            </font>
@@ -42,7 +42,7 @@
                               <Font name="Candara" size="13.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER_RIGHT" layoutX="55.0" layoutY="74.0" prefHeight="17.0" prefWidth="217.0" text="PUT POSITION HERE">
+                        <Label fx:id="positionLbl" alignment="CENTER_RIGHT" layoutX="55.0" layoutY="74.0" prefHeight="17.0" prefWidth="217.0" text="PUT POSITION HERE">
                            <font>
                               <Font name="Candara Bold" size="13.0" />
                            </font>
@@ -52,7 +52,7 @@
                               <Font name="Candara" size="13.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER_RIGHT" layoutX="55.0" layoutY="27.0" prefHeight="17.0" prefWidth="217.0" text="PUT ID# HERE">
+                        <Label fx:id="idLbl" alignment="CENTER_RIGHT" layoutX="55.0" layoutY="27.0" prefHeight="17.0" prefWidth="217.0" text="PUT ID# HERE">
                            <font>
                               <Font name="Candara Bold" size="13.0" />
                            </font>
@@ -67,7 +67,7 @@
                               <Font name="Tahoma Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER_RIGHT" layoutX="77.0" layoutY="98.0" prefHeight="17.0" prefWidth="194.0" text="PUT DEPARTMENT">
+                        <Label fx:id="departmentLbl" alignment="CENTER_RIGHT" layoutX="77.0" layoutY="98.0" prefHeight="17.0" prefWidth="194.0" text="PUT DEPARTMENT">
                            <font>
                               <Font name="Candara Bold" size="13.0" />
                            </font>

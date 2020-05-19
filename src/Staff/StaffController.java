@@ -24,6 +24,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -40,45 +41,42 @@ import javafx.stage.StageStyle;
 public class StaffController implements Initializable {
 
     @FXML
-    private AnchorPane Pane;
-
-    @FXML
     private ImageView IV_logo;
-
     @FXML
     private PieChart chart, chart1;
-
     @FXML
     private JFXHamburger ham;
-
     @FXML
     private JFXButton BTN_CheckIn;
-
     @FXML
     private JFXButton BTN_RoomReservation;
-
     @FXML
     private JFXButton BTN_CheckOut;
-
     @FXML
     private JFXButton BTN_CancelReservation;
-
     @FXML
     private JFXButton BTN_Guests;
-
     @FXML
     private JFXButton BTN_Rooms;
-
     @FXML
     private JFXDrawer drawer;
-
+    @FXML
+    private AnchorPane pieChart;
+    @FXML
+    private Label nameLbl;
+    @FXML
+    private Label positionLbl;
+    @FXML
+    private Label idLbl;
+    @FXML
+    private Label departmentLbl;
     @FXML
     void CancelReservation(ActionEvent event) {
 
     }
 
     @FXML
-    void CheckIn(ActionEvent event) throws IOException{
+    void CheckIn(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/CheckIn/GuestOption/GuestOption.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);
