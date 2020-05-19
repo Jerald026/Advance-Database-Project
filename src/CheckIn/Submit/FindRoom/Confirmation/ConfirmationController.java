@@ -6,6 +6,7 @@
 package CheckIn.Submit.FindRoom.Confirmation;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.SplitPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -36,8 +38,30 @@ public class ConfirmationController implements Initializable {
     private SplitPane splitPane;
     @FXML
     private JFXButton BTN_Validate;
-    
-    
+    @FXML
+    private JFXTextField TF_LastName;
+    @FXML
+    private JFXTextField TF_FirstName;
+    @FXML
+    private JFXTextField TF_Email;
+    @FXML
+    private JFXTextField TF_PhoneNum;
+    @FXML
+    private JFXTextField TF_Address;
+    @FXML
+    private JFXTextField TF_City;
+    @FXML
+    private JFXTextField TF_Nationality;
+    @FXML
+    private Label RoomType_Lbl;
+    @FXML
+    private Label NumOfBed_Lbl;
+    @FXML
+    private Label CheckInDate_Lbl;
+    @FXML
+    private Label CheckOut_Lbl;
+    @FXML
+    private Label RoomNum_Lbl;
 
     @FXML
     void Back(ActionEvent event) throws IOException {
@@ -60,8 +84,8 @@ public class ConfirmationController implements Initializable {
         ((Node) event.getSource()).getScene().getWindow().hide();
         stage.show();
     }
-    
-        @FXML
+
+    @FXML
     private void Validate(ActionEvent event) {
     }
 
@@ -69,7 +93,5 @@ public class ConfirmationController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
     }
-
-
 
 }

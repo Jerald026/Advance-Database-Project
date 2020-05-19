@@ -52,37 +52,37 @@
                         <Font name="Candara" size="15.0" />
                      </font>
                   </Label>
-                  <JFXTextField focusColor="#53ae6d" layoutX="20.0" layoutY="50.0" prefHeight="25.0" prefWidth="244.0">
+                  <JFXTextField fx:id="TF_LastName" focusColor="#53ae6d" layoutX="20.0" layoutY="50.0" prefHeight="25.0" prefWidth="244.0">
                      <font>
                         <Font name="Candara" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#53ae6d" layoutX="19.0" layoutY="104.0" prefHeight="25.0" prefWidth="244.0">
+                  <JFXTextField fx:id="TF_FirstName" focusColor="#53ae6d" layoutX="19.0" layoutY="104.0" prefHeight="25.0" prefWidth="244.0">
                      <font>
                         <Font name="Candara" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#53ae6d" layoutX="20.0" layoutY="157.0" prefHeight="25.0" prefWidth="244.0">
+                  <JFXTextField fx:id="TF_Email" focusColor="#53ae6d" layoutX="20.0" layoutY="157.0" prefHeight="25.0" prefWidth="244.0">
                      <font>
                         <Font name="Candara" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#53ae6d" layoutX="20.0" layoutY="217.0" prefHeight="25.0" prefWidth="244.0">
+                  <JFXTextField fx:id="TF_PhoneNum" focusColor="#53ae6d" layoutX="20.0" layoutY="217.0" prefHeight="25.0" prefWidth="244.0">
                      <font>
                         <Font name="Candara" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#53ae6d" layoutX="20.0" layoutY="278.0" prefHeight="25.0" prefWidth="244.0">
+                  <JFXTextField fx:id="TF_Address" focusColor="#53ae6d" layoutX="20.0" layoutY="278.0" prefHeight="25.0" prefWidth="244.0">
                      <font>
                         <Font name="Candara" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#53ae6d" layoutX="19.0" layoutY="337.0" prefHeight="25.0" prefWidth="244.0">
+                  <JFXTextField fx:id="TF_City" focusColor="#53ae6d" layoutX="19.0" layoutY="337.0" prefHeight="25.0" prefWidth="244.0">
                      <font>
                         <Font name="Candara" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#53ae6d" layoutX="19.0" layoutY="398.0" prefHeight="25.0" prefWidth="244.0">
+                  <JFXTextField fx:id="TF_Nationality" focusColor="#53ae6d" layoutX="19.0" layoutY="398.0" prefHeight="25.0" prefWidth="244.0">
                      <font>
                         <Font name="Candara" size="15.0" />
                      </font>
@@ -118,27 +118,27 @@
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="159.0" layoutY="48.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
+                        <Label fx:id="RoomType_Lbl" alignment="CENTER" layoutX="159.0" layoutY="48.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="159.0" layoutY="78.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
+                        <Label fx:id="NumOfBed_Lbl" alignment="CENTER" layoutX="159.0" layoutY="78.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="159.0" layoutY="109.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
+                        <Label fx:id="CheckInDate_Lbl" alignment="CENTER" layoutX="159.0" layoutY="109.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="159.0" layoutY="138.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
+                        <Label fx:id="CheckOut_Lbl" alignment="CENTER" layoutX="159.0" layoutY="138.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="159.0" layoutY="166.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
+                        <Label fx:id="RoomNum_Lbl" alignment="CENTER" layoutX="159.0" layoutY="166.0" prefHeight="17.0" prefWidth="204.0" text="Label" textAlignment="CENTER">
                            <font>
                               <Font name="Candara" size="15.0" />
                            </font>
