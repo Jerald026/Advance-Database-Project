@@ -16,7 +16,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="pieChart" prefHeight="692.0" prefWidth="1034.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Staff.StaffController">
     <stylesheets>
-        <URL value="@staff.css" />
+        <URL value="@/AdvanceDatabase/drawer.css" />
     </stylesheets>
    <children>
       <JFXHamburger fx:id="ham" layoutX="981.0" layoutY="29.0" prefHeight="44.0" prefWidth="39.0" />

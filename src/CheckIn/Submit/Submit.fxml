@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="507.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckIn.Submit.SubmitController">
    <stylesheets>
-      <URL value="@../../CheckIn/checkin.css" />
+      <URL value="@/AdvanceDatabase/drawer.css" />
    </stylesheets>
    <children>
       <SplitPane layoutX="16.0" layoutY="103.0" prefHeight="372.0" prefWidth="475.0" style="-fx-border-color: #0d47a1;">

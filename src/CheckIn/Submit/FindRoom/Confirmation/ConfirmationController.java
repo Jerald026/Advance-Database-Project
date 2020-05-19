@@ -35,7 +35,7 @@ public class ConfirmationController implements Initializable {
     @FXML
     private SplitPane splitPane;
     @FXML
-    private JFXButton BTN_Save1;
+    private JFXButton BTN_Validate;
     
     
 
@@ -60,10 +60,16 @@ public class ConfirmationController implements Initializable {
         ((Node) event.getSource()).getScene().getWindow().hide();
         stage.show();
     }
+    
+        @FXML
+    private void Validate(ActionEvent event) {
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
     }
+
+
 
 }

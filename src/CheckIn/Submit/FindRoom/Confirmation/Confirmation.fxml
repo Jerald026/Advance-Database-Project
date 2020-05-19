@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="722.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckIn.Submit.FindRoom.Confirmation.ConfirmationController">
     <stylesheets>
-        <URL value="@confirmation.css" />
+        <URL value="@/AdvanceDatabase/drawer.css" />
     </stylesheets>
    <children>
       <SplitPane fx:id="splitPane" dividerPositions="0.4270676691729323" layoutX="28.0" layoutY="116.0" prefHeight="447.0" prefWidth="667.0">
@@ -196,7 +196,7 @@
                               <Font name="Candara" size="15.0" />
                            </font>
                         </JFXTextField>
-                        <JFXButton fx:id="BTN_Save1" buttonType="RAISED" layoutX="288.0" layoutY="116.0" onAction="#Save" prefHeight="18.0" prefWidth="73.0" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="VALIDATE">
+                        <JFXButton fx:id="BTN_Validate" buttonType="RAISED" layoutX="288.0" layoutY="116.0" onAction="#Validate" prefHeight="18.0" prefWidth="73.0" ripplerFill="#d7b348" style="-fx-background-color: #FFFFFF;" text="VALIDATE">
                            <font>
                               <Font name="Candara Bold" size="12.0" />
                            </font>

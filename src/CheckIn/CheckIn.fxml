@@ -10,19 +10,19 @@
 
 <AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="507.0" style="-fx-background-color: #e3f2fd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckIn.CheckInController">
     <stylesheets>
-        <URL value="@checkin.css" />
+        <URL value="@/AdvanceDatabase/drawer.css" />
     </stylesheets>
    <children>
       <SplitPane layoutX="16.0" layoutY="103.0" prefHeight="482.0" prefWidth="475.0" style="-fx-border-color: #0d47a1;">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="459.0" prefWidth="473.0">
                <children>
-                  <JFXButton fx:id="BTN_Submit" buttonType="RAISED" layoutX="312.0" layoutY="431.0" onAction="#Submit" ripplerFill="#d7b348" text="SUBMIT">
+                  <JFXButton fx:id="BTN_Submit" buttonType="RAISED" focusTraversable="false" layoutX="312.0" layoutY="431.0" onAction="#Submit" ripplerFill="#d7b348" text="SUBMIT">
                      <font>
                         <Font name="Candara Bold" size="14.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="BTN_Clear" buttonType="RAISED" layoutX="237.0" layoutY="431.0" onAction="#Clear" ripplerFill="#d7b348" text="CLEAR">
+                  <JFXButton fx:id="BTN_Clear" buttonType="RAISED" focusTraversable="false" layoutX="237.0" layoutY="431.0" onAction="#Clear" ripplerFill="#d7b348" text="CLEAR">
                      <font>
                         <Font name="Candara Bold" size="14.0" />
                      </font>
@@ -62,7 +62,7 @@
                         <Font name="Candara" size="13.0" />
                      </font>
                   </JFXTextField>
-                  <JFXButton fx:id="BTN_Back" buttonType="RAISED" layoutX="92.0" layoutY="431.0" onAction="#Back" ripplerFill="#d7b348" text="BACK">
+                  <JFXButton fx:id="BTN_Back" buttonType="RAISED" focusTraversable="false" layoutX="92.0" layoutY="431.0" onAction="#Back" ripplerFill="#d7b348" text="BACK">
                      <font>
                         <Font name="Candara Bold" size="14.0" />
                      </font>
